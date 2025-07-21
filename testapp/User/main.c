@@ -2,13 +2,13 @@
 
 void delay(int xms)
 {
-	int i = SystemCoreClock / 1000;
+	int i = 72;
 	int j = 0;
 	while (xms--)
 	{
-		for (j = 0; j < i; j++)
+		for (; j < i; j++)
 		{
-			__NOP();
+			__nop();
 		}
 	}
 }
@@ -18,9 +18,9 @@ int main()
 	while (1)
 	{
 		LED3_ON;
-		delay(10);
+		delay(1000000);
 		LED3_OFF;
-		delay(10);
+		delay(1000000);
 	}
 	return 0;
 }
