@@ -2,7 +2,10 @@
 
 int main()
 {
-
-
+	LED_Init();
+	while (1)
+	{
+		;
+	}
 	return 0;
 }
