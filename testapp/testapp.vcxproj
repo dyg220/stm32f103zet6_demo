@@ -1,0 +1,152 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM">
+      <Configuration>Release</Configuration>
+      <Platform>ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|ARM64">
+      <Configuration>Debug</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|ARM64">
+      <Configuration>Release</Configuration>
+      <Platform>ARM64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x86">
+      <Configuration>Debug</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x86">
+      <Configuration>Release</Configuration>
+      <Platform>x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{39fd2858-2b1a-4d2a-9409-df73d3337c6b}</ProjectGuid>
+    <Keyword>Linux</Keyword>
+    <RootNamespace>testapp</RootNamespace>
+    <MinimumVisualStudioVersion>15.0</MinimumVisualStudioVersion>
+    <ApplicationType>Linux</ApplicationType>
+    <ApplicationTypeRevision>1.0</ApplicationTypeRevision>
+    <TargetLinuxPlatform>Generic</TargetLinuxPlatform>
+    <LinuxProjectType>{2238F9CD-F817-4ECC-BD14-2524D2669B35}</LinuxProjectType>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x86'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x86'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|ARM64'" Label="Configuration">
+    <UseDebugLibraries>false</UseDebugLibraries>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM64'" Label="Configuration">
+    <UseDebugLibraries>true</UseDebugLibraries>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings" />
+  <ImportGroup Label="Shared" />
+  <ImportGroup Label="PropertySheets" />
+  <PropertyGroup Label="UserMacros" />
+  <ItemGroup>
+    <ClCompile Include="Cmsis\core_cm3.c" />
+    <ClCompile Include="Cmsis\stm32f10x_it.c" />
+    <ClCompile Include="Cmsis\system_stm32f10x.c" />
+    <ClCompile Include="Hardwear\LED\led.c" />
+    <ClCompile Include="Library\FWLib\src\misc.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_adc.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_bkp.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_can.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_cec.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_crc.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_dac.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_dbgmcu.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_dma.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_exti.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_flash.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_fsmc.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_gpio.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_i2c.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_iwdg.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_pwr.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_rcc.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_rtc.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_sdio.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_spi.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_tim.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_usart.c" />
+    <ClCompile Include="Library\FWLib\src\stm32f10x_wwdg.c" />
+    <ClCompile Include="User\main.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Cmsis\core_cm3.h" />
+    <ClInclude Include="Cmsis\io_bit.h" />
+    <ClInclude Include="Cmsis\stm32f10x.h" />
+    <ClInclude Include="Cmsis\stm32f10x_conf.h" />
+    <ClInclude Include="Cmsis\stm32f10x_it.h" />
+    <ClInclude Include="Cmsis\system_stm32f10x.h" />
+    <ClInclude Include="Hardwear\LCD\font.h" />
+    <ClInclude Include="Hardwear\LED\led.h" />
+    <ClInclude Include="Library\FWLib\inc\misc.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_adc.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_bkp.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_can.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_cec.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_crc.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_dac.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_dbgmcu.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_dma.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_exti.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_flash.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_fsmc.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_gpio.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_i2c.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_iwdg.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_pwr.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_rcc.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_rtc.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_sdio.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_spi.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_tim.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_usart.h" />
+    <ClInclude Include="Library\FWLib\inc\stm32f10x_wwdg.h" />
+    <ClInclude Include="User\main.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Cmsis\startup_stm32f10x_hd.s" />
+  </ItemGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Keil_v5\ARM\ARMCC\include;.\Library\FWLib\inc;.\Cmsis;.\Hardwear\LED</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__arm__;__CC_ARM;__GNUC__;STM32F10X_HD;USE_STDPERIPH_DRIVER</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets" />
+</Project>
