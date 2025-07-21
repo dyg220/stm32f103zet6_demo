@@ -147,6 +147,12 @@
       <PreprocessorDefinitions>__arm__;__CC_ARM;__GNUC__;STM32F10X_HD;USE_STDPERIPH_DRIVER</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Keil_v5\ARM\ARMCC\include;.\Cmsis;.\Hardwear\LED;.\Library\FWLib\inc;.\User</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>__arm__;__CC_ARM;__GNUC__;STM32F10X_HD;USE_STDPERIPH_DRIVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />
 </Project>
