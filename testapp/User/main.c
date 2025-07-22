@@ -18,11 +18,7 @@ int main()
 	Usart1_Init(115200);
 	while (1)
 	{
-		LED3_ON;
-		delay(1000000);
-		LED3_OFF;
-		delay(1000000);
-		Usart1_SendByte('A');
+		printf("test\r\n");
 		delay(1000000);
 	}
 	return 0;
