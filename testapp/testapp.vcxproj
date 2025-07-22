@@ -103,6 +103,7 @@
     <ClCompile Include="Library\FWLib\src\stm32f10x_usart.c" />
     <ClCompile Include="Library\FWLib\src\stm32f10x_wwdg.c" />
     <ClCompile Include="User\main.c" />
+    <ClCompile Include="User\usart1.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Cmsis\core_cm3.h" />
@@ -137,6 +138,7 @@
     <ClInclude Include="Library\FWLib\inc\stm32f10x_usart.h" />
     <ClInclude Include="Library\FWLib\inc\stm32f10x_wwdg.h" />
     <ClInclude Include="User\main.h" />
+    <ClInclude Include="User\usart1.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Cmsis\startup_stm32f10x_hd.s" />
