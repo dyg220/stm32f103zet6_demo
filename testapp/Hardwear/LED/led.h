@@ -14,6 +14,8 @@
 #define LED6_ON   GPIO_ResetBits(GPIOA, GPIO_Pin_6)
 #define LED6_OFF  GPIO_SetBits(GPIOA, GPIO_Pin_6)
 
+#define LED_ON   GPIO_SetBits(GPIOB, GPIO_Pin_12)
+#define LED_OFF  GPIO_ResetBits(GPIOB, GPIO_Pin_12)
 
 void LED_Init(void);
 

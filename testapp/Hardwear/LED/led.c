@@ -13,7 +13,7 @@ void LED_Init(void)
 	GPIO_InitTypeDef GPIO_InitStruct = { 0 };
 	GPIO_InitStruct.GPIO_Mode = GPIO_Mode_Out_PP;
 	GPIO_InitStruct.GPIO_Speed = GPIO_Speed_50MHz;
-	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_5;
+	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_5| GPIO_Pin_12;
 	GPIO_Init(GPIOB, &GPIO_InitStruct);
 
 	GPIO_InitStruct.GPIO_Pin = GPIO_Pin_5;
@@ -26,4 +26,6 @@ void LED_Init(void)
 	LED4_OFF;
 	LED5_OFF;
 	LED6_OFF;
+
+	LED_OFF;
 }
