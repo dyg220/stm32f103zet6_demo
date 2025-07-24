@@ -6,6 +6,7 @@
 	PE5---D4
 	PA5---D5
 	PA6---D6
+	PB12--test
 */
 void LED_Init(void)
 {
