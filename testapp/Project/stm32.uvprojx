@@ -340,7 +340,7 @@
               <MiscControls></MiscControls>
               <Define>STM32F10X_HD,USE_STDPERIPH_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>..\Cmsis;..\Library\FWLib\inc;..\User;..\Hardwear\LED</IncludePath>
+              <IncludePath>..\Cmsis;..\Library\FWLib\inc;..\User;..\Hardwear\LED;..\Hardwear\MAX7219</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -423,6 +423,11 @@
               <FileName>led.c</FileName>
               <FileType>1</FileType>
               <FilePath>..\Hardwear\LED\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>MAX7219.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\Hardwear\MAX7219\MAX7219.c</FilePath>
             </File>
           </Files>
         </Group>
