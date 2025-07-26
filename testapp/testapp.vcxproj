@@ -79,6 +79,7 @@
     <ClCompile Include="Cmsis\stm32f10x_it.c" />
     <ClCompile Include="Cmsis\system_stm32f10x.c" />
     <ClCompile Include="Hardwear\LED\led.c" />
+    <ClCompile Include="Hardwear\MAX7219\MAX7219.c" />
     <ClCompile Include="Library\FWLib\src\misc.c" />
     <ClCompile Include="Library\FWLib\src\stm32f10x_adc.c" />
     <ClCompile Include="Library\FWLib\src\stm32f10x_bkp.c" />
@@ -114,6 +115,7 @@
     <ClInclude Include="Cmsis\system_stm32f10x.h" />
     <ClInclude Include="Hardwear\LCD\font.h" />
     <ClInclude Include="Hardwear\LED\led.h" />
+    <ClInclude Include="Hardwear\MAX7219\MAX7219.h" />
     <ClInclude Include="Library\FWLib\inc\misc.h" />
     <ClInclude Include="Library\FWLib\inc\stm32f10x_adc.h" />
     <ClInclude Include="Library\FWLib\inc\stm32f10x_bkp.h" />
@@ -151,7 +153,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|ARM'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Keil_v5\ARM\ARMCC\include;.\Cmsis;.\Hardwear\LED;.\Library\FWLib\inc;.\User</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Keil_v5\ARM\ARMCC\include;.\Cmsis;.\Library\FWLib\inc;.\User;.\Hardwear\LED;.\Hardwear\MAX7219</AdditionalIncludeDirectories>
       <PreprocessorDefinitions>__arm__;__CC_ARM;__GNUC__;_ARMABI;STM32F10X_HD;USE_STDPERIPH_DRIVER;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
   </ItemDefinitionGroup>
