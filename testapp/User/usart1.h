@@ -2,6 +2,9 @@
 #ifndef _USART1_H_
 #define _USART1_H_
 #include "stm32f10x.h"
+#include <stdio.h>
+#include <string.h>
+
 
 void Usart1_Init(u32 Baud);
 //void Usart1_SendByte(u8 data);

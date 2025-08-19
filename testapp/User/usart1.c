@@ -1,6 +1,5 @@
 #include "usart1.h"
-#include <stdio.h>
-#include <string.h>
+
 
 void Usart1_Init(u32 Baud)
 {

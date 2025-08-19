@@ -1,9 +1,6 @@
 #include "main.h"
 
-void delay(int xms)
-{
-    while (xms--);
-}
+
 int main()
 {
     LED_Init();
@@ -11,8 +8,7 @@ int main()
 	MAX7219_Init();
     while (1)
     {
-        printf("test1----------------------\r\n");
-        delay(0xFFFFF);
+        printf("test2222-------\r\n");
 
     }
     return 0;
